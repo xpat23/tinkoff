@@ -37,3 +37,26 @@ in app/config/config.yml
 ```
 Usage
 -----
+
+```php
+use Xpat\TinkoffBundle\Service\PaymentParameterBuilder;
+use Xpat\TinkoffBundle\Service\TinkoffPaymentService;
+
+
+
+class InitController extends Controller
+{
+    
+    public function indexAction(PaymentParameterBuilder $parameterBuilder, TinkoffPaymentService $service)
+    { 
+        $params = $this->parameterBuilder->build();
+        $params->setOrderId($orderId);
+        $params->setAmount($amount);
+        //set another fields
+        $result = $service->initPayment($params);
+        // handle result
+        return $this->redirect($result->getPaymentURL());
+        
+    }
+}
+```
