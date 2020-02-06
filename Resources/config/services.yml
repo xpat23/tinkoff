@@ -1,0 +1,10 @@
+services:
+#    xpat_tinkoff.example:
+#        class: Xpat\TinkoffBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
+  Xpat\TinkoffBundle\Service\PaymentParameterBuilder:
+    arguments: ['%tinkoff_terminal_key%','%tinkoff_password%','@router','%tinkoff_notification_route%','%tinkoff_success_route%','%tinkoff_fail_route%']
+  Xpat\TinkoffBundle\Service\TinkoffPaymentService:
+    arguments: ['%tinkoff_api_url%', '%tinkoff_password%']
+  Xpat\TinkoffBundle\Service\PaymentNotificationService:
+    arguments: ['%tinkoff_password%']

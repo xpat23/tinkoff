@@ -1,0 +1,3 @@
+xpat_tinkoff_homepage:
+    path:     /
+    defaults: { _controller: XpatTinkoffBundle:Default:index }
