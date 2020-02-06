@@ -1,0 +1,25 @@
+{
+  "name" : "xpat/tinkoffbundle",
+  "description" : "tinkoff paymen api bundle",
+  "version" : "1.0.0",
+  "type" : "symfony-bundle",
+  "homepage": "https://github.com/xpat23/tinkoff",
+  "license" : "MIT",
+  "keywords" : [],
+  "authors" : [{
+    "name" : "xpat",
+    "email" : "x.pat.kg@gmail.com"
+  }],
+  "require" : {
+    "php": ">=7.2",
+    "symfony/symfony": ">=3.4"
+  },
+  "autoload" : {
+    "psr-4" : { "xpat\\TinkoffBundle\\" : "" }
+  },
+  "extra" : {
+    "branch-alias" : {
+      "dev-master" : "dev-master"
+    }
+  }
+}
