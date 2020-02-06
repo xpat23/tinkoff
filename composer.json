@@ -16,5 +16,10 @@
   },
   "autoload" : {
     "psr-4" : { "Xpat\\TinkoffBundle\\" : "" }
+  },
+  "extra" : {
+    "branch-alias" : {
+      "dev-master" : "master"
+    }
   }
 }
