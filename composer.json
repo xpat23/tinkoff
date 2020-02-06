@@ -15,7 +15,7 @@
     "symfony/symfony": ">=3.4"
   },
   "autoload" : {
-    "psr-4" : { "xpat\\TinkoffBundle\\" : "" }
+    "psr-4" : { "Xpat\\TinkoffBundle\\" : "" }
   },
   "extra" : {
     "branch-alias" : {
